@@ -28,7 +28,7 @@ Create the DNS records for your domain and for `api.<domain>` before you run it,
 
 ## What it needs, and what it does not
 
-A self-hosted Kortix instance needs outbound network access, so it is not an offline install. It pulls its images from `docker.io/kortix/*`, and agent sessions never run on the box. They run on a separate sandbox provider that `kortix-api` reaches over egress, with Daytona as the default and Platinum and E2B also supported. The sandbox provider key is the one credential the stack cannot start without, and a domain or a tunnel gives the sandbox a stable URL to call back to.
+A self-hosted Kortix instance needs outbound network access, so it is not an offline install. It pulls its images from `docker.io/kortix/*`, and agent sessions never run on the box. They run on a separate sandbox provider that `kortix-api` reaches over egress, with Platinum as the default and Daytona as a legacy fallback. The sandbox provider key is the one credential the stack cannot start without, and a domain or a tunnel gives the sandbox a stable URL to call back to.
 
 ## What to back up
 
